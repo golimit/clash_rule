@@ -1,0 +1,37 @@
+[
+  {
+    "tag": "IPv4_out",
+    "protocol": "freedom",
+    "settings": {}
+  },
+  {
+    "tag": "IPv6_out",
+    "protocol": "freedom",
+    "settings": {
+      "domainStrategy": "UseIPv6"
+    }
+  },
+  {
+    "tag": "socks5-1",
+    "protocol": "socks",
+    "settings": {
+      "servers": [
+        {
+          "address": "s5服务器ip",
+          "port": s5服务器端口,
+	  "users": [
+	    {
+	      "user": "s5 user",
+	      "pass": "s5 pass",
+	      "level": 0
+	    }
+	  ]
+        }
+      ]
+    }
+  },
+  {
+    "protocol": "blackhole",
+    "tag": "block"
+  }
+]
